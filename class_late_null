@@ -1,0 +1,17 @@
+class ogrenci {
+  String ad;
+  int _yas;
+
+  String? adress;
+  late String okul;
+
+  ogrenci(this.ad, this._yas);
+
+  void merhabade() {
+    print('Merhba benim adım $ad , yasşım $_yas');
+  }
+
+  void dogumgunukutla() {
+    _yas = _yas + 1;
+  }
+}
