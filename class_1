@@ -2,16 +2,25 @@ class ogrenci {
   String ad;
   int yas;
 
+  ogrenci(this.ad, this.yas);
+
   void merhabade() {
     print('Merhba benim adım $ad , yasşım $yas');
   }
 
-  ogrenci(this.ad, this.yas);
+  void dogumgunukutla() {
+    yas = yas + 1;
+  }
 }
 
 void main() {
   ogrenci o1 = ogrenci("ali", 15);
-  ogrenci o2 = ogrenci("ayse", 16);
+  ogrenci o2 = ogrenci("ayse", 18);
+
+  o1.merhabade();
+  o2.merhabade();
+
+  o1.dogumgunukutla();
 
   o1.merhabade();
   o2.merhabade();
