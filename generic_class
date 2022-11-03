@@ -1,0 +1,11 @@
+void main() {
+  final m = MyClass<int>(4);
+
+  print(m.val);
+}
+
+class MyClass<T> {
+  T val;
+
+  MyClass(this.val);
+}
